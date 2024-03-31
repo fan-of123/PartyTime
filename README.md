@@ -1,19 +1,17 @@
-PartyTime is a datapack that enables you to use fireworks and fireworks explosions as VFX and SFX without damaging players, making use of subtick timing popularized by BigPapi's Delta! For Minecraft java edition 1.20.
+PartyTime is a datapack that enables you to use fireworks and fireworks explosions as VFX and SFX without damaging players, making use of subtick timing popularized by BigPapi's Delta! For Minecraft java edition 1.20.4 (also has a 1.20.2 branch).
 For the nerds: Details on how to mesh this pack with your own at the bottom.
-
-Instructions for use: Download the datapack and put it into your `datapacks` folder.
 
 # Instant Explosions
 
-To create a damageless explosion: This datapack has two functions for instantanous explosions, listed below:
+This datapack has two functions for instantanous explosions, listed below:
 
-`/function n_fwk:api/burst_macro`: This function will create a fireworks explosion at the location it is run. It is a macro function, where in the 'nbt' field you will pass the NBT of the entire fireworks entity as you would use in a /summon command
+`/function n_fwk:api/burst_macro`: This function will create a fireworks explosion at the location it is run. It is a macro function, where in the 'nbt' field you will pass the NBT of the entire fireworks entity as you would use in a /summon command. 
 
 Example use: 
 
 >`/function n_fwk:api/burst_macro {nbt:{FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16755553]}]}}}}}`
 
-`/function n_fwk:api/burst_storage`: This function will create a fireworks explosion at the location it is run. This is *not* a macro function. Instead, it will look for NBT in the path `api.nbt` in the storage `n_fwk:storage`
+`/function n_fwk:api/burst_storage`: This function will create a fireworks explosion at the location it is run. This is *not* a macro function. Instead, it will look for NBT in the path `api.nbt` in the storage `n_fwk:storage`. Data stored in `api.nbt` is not changed by the datapack, so this is ideal for if you want to spawn multiple identical explosions.
 
 Example use: 
 
