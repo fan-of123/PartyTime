@@ -1,1 +1,0 @@
-$execute unless block ~$(x) ~$(y) ~$(z) air run function n_fwk:z/as/cancel
