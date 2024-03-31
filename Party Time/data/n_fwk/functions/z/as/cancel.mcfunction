@@ -1,2 +1,3 @@
+scoreboard players set #cont n_fwk.temp 0
 execute on passengers as @s[tag=n_fwk.track] run function n_fwk:z/as/new
 kill @s

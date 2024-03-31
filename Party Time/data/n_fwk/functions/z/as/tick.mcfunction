@@ -1,5 +1,7 @@
 scoreboard players remove @s n_fwk.flight 1
-execute if entity @s[scores={n_fwk.flight=..1}] run return run function n_fwk:z/as/cancel
+scoreboard players set #cont n_fwk.temp 1
+execute if entity @s[scores={n_fwk.flight=..1}] run function n_fwk:z/as/cancel
+execute if score #cont n_fwk.temp matches 0 run return 0
 data modify storage n_fwk:storage z.vector set from entity @s Pos
 scoreboard players operation #mx n_fwk.temp = @s n_fwk.x
 scoreboard players operation #my n_fwk.temp = @s n_fwk.y

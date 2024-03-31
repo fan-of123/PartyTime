@@ -1,7 +1,7 @@
 tag @s add n_fwk.rocket
 data modify storage n_fwk:storage z.nbt set from entity @s {}
-execute unless entity @s[tag=n_fwk.API.no_damage] unless data storage n_fwk:storage z.nbt.FireworksItem.tag.n_fwk.no_damage run return fail
-execute unless data storage n_fwk:storage z.nbt.FireworksItem.tag.Fireworks.Explosions[] run return fail
+execute unless entity @s[tag=n_fwk.API.no_damage] unless data storage n_fwk:storage z.nbt.FireworksItem.tag.n_fwk.no_damage run return 0
+execute unless data storage n_fwk:storage z.nbt.FireworksItem.tag.Fireworks.Explosions[] run return 0
 data modify entity @s FireworksItem.tag.Fireworks.Explosions set value []
 scoreboard players set @s n_fwk.x 0
 scoreboard players set @s n_fwk.y 0
