@@ -1,0 +1,95 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:all_of",
+            "terms": [
+                {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "n_fwk.mx": {
+                                "min": -1,
+                                "max": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#mx"
+                        },
+                        "score": "n_fwk.temp"
+                    },
+                    "range": 0
+                }
+            ]
+        },
+        {
+            "condition": "minecraft:all_of",
+            "terms": [
+                {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "n_fwk.my": {
+                                "min": -1,
+                                "max": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#my"
+                        },
+                        "score": "n_fwk.temp"
+                    },
+                    "range": 0
+                }
+            ]
+        },
+        {
+            "condition": "minecraft:all_of",
+            "terms": [
+                {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "n_fwk.mz": {
+                                "min": -1,
+                                "max": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#mz"
+                        },
+                        "score": "n_fwk.temp"
+                    },
+                    "range": 0
+                }
+            ]
+        }
+    ]
+}
