@@ -1,0 +1,2 @@
+data modify entity @s Owner set from storage n_fwk:storage z.tempUuid
+data merge entity @s {Radius:1f,Duration:6,Age:4,Tags:["n_fwk.fwk","n_fwk.internal"],potion_contents:{custom_effects:[{id:"minecraft:instant_damage",amplifier:1b,duration:1}]}}
